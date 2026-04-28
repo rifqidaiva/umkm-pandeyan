@@ -8,9 +8,12 @@ if (!umkm.value) {
   throw createError({ statusCode: 404, statusMessage: "UMKM tidak ditemukan" })
 }
 
-useHead(() => ({
+useSeoMeta({
   title: `${umkm.value?.name} | UMKM Pandeyan`,
-}))
+  ogTitle: `${umkm.value?.name} | UMKM Pandeyan`,
+  description: umkm.value?.description,
+  ogDescription: umkm.value?.description,
+})
 </script>
 
 <template>
