@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap");
+@import "tailwindcss";
+@import "@nuxt/ui";
+
+@theme inline {
+  --font-heading: "Fraunces", serif;
+}
+
+@layer base {
+  h1,
+  h2,
+  h3,
+  .font-heading {
+    font-family: var(--font-heading);
+  }
+}
+
+.dark {
+  --ui-bg: var(--ui-color-neutral-950);
+}
