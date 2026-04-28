@@ -1,23 +1,10 @@
-# UMKM Pandeyan — Katalog UMKM Kelurahan Pandeyan
+# Nuxt Minimal Starter
 
-Situs katalog untuk menampilkan profil dan produk UMKM di Kelurahan Pandeyan. Memudahkan warga dan pengunjung menemukan usaha lokal, melihat detail usaha, dan menghubungi pemilik.
+Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
-## Fitur
+## Setup
 
-- Daftar UMKM dengan pencarian dan filter
-- Halaman profil UMKM (deskripsi, produk, kontak, lokasi)
-- Galeri foto produk
-- Peta lokasi UMKM (opsional)
-
-## Teknologi
-
-- Nuxt (Vue) untuk frontend
-- Tailwind CSS / SCSS untuk styling (sesuaikan dengan project)
-- Data: JSON
-
-## Persiapan
-
-Install dependensi:
+Make sure to install dependencies:
 
 ```bash
 # npm
@@ -33,9 +20,9 @@ yarn install
 bun install
 ```
 
-## Menjalankan server development
+## Development Server
 
-Jalankan server development (default http://localhost:3000):
+Start the development server on `http://localhost:3000`:
 
 ```bash
 # npm
@@ -51,7 +38,9 @@ yarn dev
 bun run dev
 ```
 
-## Build untuk produksi
+## Production
+
+Build the application for production:
 
 ```bash
 # npm
@@ -67,7 +56,7 @@ yarn build
 bun run build
 ```
 
-Pratinjau build produksi:
+Locally preview production build:
 
 ```bash
 # npm
@@ -83,31 +72,4 @@ yarn preview
 bun run preview
 ```
 
-## Menambahkan/ Mengelola data UMKM
-
-Simpan data UMKM di folder data/umkm.ts sebagai array objek. Contoh:
-
-```ts
-export const umkmList: Umkm[] = [
-  {
-    slug: "umkm-1",
-    name: "UMKM Contoh",
-    category: "Kuliner",
-    owner: "Budi",
-    address: "Jl. Contoh No. 1",
-    description: "UMKM contoh yang menjual makanan lezat.",
-    products: ["Nasi Goreng", "Mie Ayam"],
-    hours: "10:00 - 20:00",
-    contact: "08123456789",
-    highlight: "Makanan enak dengan harga terjangkau",
-    locationNote: "Dekat alun-alun Pandeyan"
-  },
-  // Tambahkan UMKM lain di sini
-]
-```
-
-## Deploy
-
-Lihat dokumentasi deployment Nuxt atau deploy ke platform pilihan (Vercel, Netlify, Render, dsb). Pastikan variabel lingkungan diset di dashboard hosting.
-
-Untuk dokumentasi Nuxt dan panduan deployment, kunjungi https://nuxt.com/docs
+Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
