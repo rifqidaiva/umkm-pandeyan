@@ -9,10 +9,12 @@ const categories = getUmkmCategories()
     <div class="max-w-3xl space-y-4">
       <p class="text-sm font-semibold uppercase tracking-[0.28em] text-amber-700">Daftar UMKM</p>
       <h1 class="text-3xl font-semibold tracking-tight text-slate-950 sm:text-4xl font-heading">
-        Katalog usaha yang ada di Kelurahan Pandeyan
+        Katalog usaha yang terdapat di Kelurahan Pandeyan RW 11 dan RW 13.
       </h1>
       <p class="text-base leading-7 text-slate-600">
-        Halaman ini menampung daftar UMKM sebagai pintu masuk menuju profil masing-masing usaha.
+        Temukan berbagai usaha mikro yang beragam, mulai dari kuliner, kerajinan tangan, hingga
+        layanan lokal lainnya. Setiap profil UMKM menyajikan informasi lengkap tentang produk, jam
+        operasional, dan kontak untuk memudahkan Anda menjelajahi kekayaan ekonomi lokal Pandeyan.
       </p>
     </div>
 

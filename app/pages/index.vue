@@ -2,11 +2,10 @@
 const featuredStats = [
   { label: "UMKM aktif", value: "4+" },
   { label: "Kategori usaha", value: "4" },
-  { label: "Akses layanan", value: "Mudah dijangkau" },
 ]
 
 const highlights = [
-  "Menampilkan ringkasan kelurahan Pandeyan sebagai pintu masuk website.",
+  "Informasi mengenai UMKM Kelurahan Pandeyan yang berada di RW 11 dan RW 13.",
   "Menautkan pengunjung ke katalog UMKM yang terkurasi.",
   "Menyediakan halaman profil UMKM untuk detail usaha dan kontak.",
 ]
@@ -14,8 +13,8 @@ const highlights = [
 
 <template>
   <section class="relative overflow-hidden">
-    <div
-      class="absolute inset-x-0 top-0 -z-10 h-72 bg-[radial-gradient(circle_at_top_left,rgba(180,83,9,0.18),transparent_38%),radial-gradient(circle_at_top_right,rgba(14,165,233,0.16),transparent_30%),linear-gradient(180deg,rgba(255,251,235,0.9),transparent)]" />
+    <!-- <div
+      class="absolute inset-x-0 top-0 -z-10 h-72 bg-[radial-gradient(circle_at_top_left,rgba(180,83,9,0.18),transparent_38%),radial-gradient(circle_at_top_right,rgba(14,165,233,0.16),transparent_30%),linear-gradient(180deg,rgba(255,251,235,0.9),transparent)]" /> -->
 
     <div class="mx-auto max-w-6xl px-6 py-16 sm:px-8 lg:px-10 lg:py-20">
       <div class="grid gap-10 lg:grid-cols-[1.2fr_0.8fr] lg:items-center">
@@ -30,8 +29,9 @@ const highlights = [
               Wajah ekonomi lokal Pandeyan dalam satu tempat.
             </h1>
             <p class="max-w-2xl text-base leading-7 text-slate-600 sm:text-lg">
-              Website ini menjadi scaffold sederhana untuk mengenalkan Kelurahan Pandeyan,
-              menampilkan daftar UMKM setempat, dan membuka halaman profil tiap usaha.
+              Portal ini memperkenalkan UMKM di Kelurahan Pandeyan, khususnya yang berada di RW 11
+              dan RW 13. Temukan profil usaha, produk, jam operasional, dan kontak untuk pemesanan
+              atau kunjungan—semua tersaji dalam satu katalog digital yang mudah dijelajahi.
             </p>
           </div>
 

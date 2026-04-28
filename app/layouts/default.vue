@@ -1,6 +1,6 @@
 <template>
   <div
-    class="min-h-screen bg-[linear-gradient(180deg,#fffaf2_0%,#ffffff_28%,#f8fafc_100%)] text-slate-900">
+    class="min-h-screen text-slate-900">
     <header class="sticky top-0 z-20 border-b border-white/60 bg-white/75 backdrop-blur">
       <div class="mx-auto flex max-w-6xl items-center justify-between px-6 py-4 sm:px-8 lg:px-10">
         <NuxtLink
@@ -38,8 +38,8 @@
     <footer class="border-t border-slate-200/80 bg-white/70">
       <div
         class="mx-auto flex max-w-6xl flex-col gap-2 px-6 py-6 text-sm text-slate-500 sm:px-8 lg:px-10 sm:flex-row sm:items-center sm:justify-between">
-        <p>Scaffold website katalog UMKM Kelurahan Pandeyan.</p>
-        <p>Siap dikembangkan ke data nyata, map, dan form kontak.</p>
+        <p>Copyright &copy; {{ new Date().getFullYear() }} Katalog UMKM Pandeyan. All rights reserved | KKN 84.008 UPNVY</p>
+        <p>Media Sosial</p>
       </div>
     </footer>
   </div>
