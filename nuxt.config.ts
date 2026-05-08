@@ -3,7 +3,7 @@
 export default defineNuxtConfig({
   app: {
     head: {
-      title: "Katalog UMKM Pandeyan",
+      title: "Booking Tempat Taman Legawong",
       htmlAttrs: { lang: "id" },
       link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
     },

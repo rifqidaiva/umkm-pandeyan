@@ -3,40 +3,41 @@ import type { ButtonProps } from "@nuxt/ui"
 
 const links = ref<ButtonProps[]>([
   {
-    label: "Lihat daftar UMKM",
-    to: "/umkm",
-    icon: "i-lucide-store",
+    label: "Lihat booking tempat",
+    to: "/booking",
+    icon: "i-lucide-calendar-range",
     color: "primary",
   },
-  // {
-  //   label: "Baca ringkasan",
-  //   to: "#ringkasan",
-  //   icon: "i-lucide-file-text",
-  //   color: "neutral",
-  //   variant: "outline",
-  // },
+  {
+    label: "Lihat fasilitas",
+    to: "#ringkasan",
+    icon: "i-lucide-map-pinned",
+    color: "neutral",
+    variant: "outline",
+  },
 ])
 
 const featuredStats = [
-  { label: "UMKM aktif", value: "4+" },
-  { label: "Kategori usaha", value: "4" },
+  { label: "Spot siap booking", value: "4" },
+  { label: "Kapasitas total", value: "150+" },
+  { label: "Pilihan durasi", value: "2-6 jam" },
 ]
 
 const highlightCards = ref([
   {
-    title: "Fokus",
-    description: "Informasi mengenai UMKM Kelurahan Pandeyan yang berada di RW 11 dan RW 13.",
-    icon: "i-lucide-info",
+    title: "Pilih spot",
+    description: "Lihat pilihan gazebo, pendopo, dan area terbuka yang bisa disesuaikan dengan acara Anda.",
+    icon: "i-lucide-map-pinned",
   },
   {
-    title: "Fokus",
-    description: "Menautkan pengunjung ke katalog UMKM yang terkurasi.",
-    icon: "i-lucide-user",
+    title: "Cek kapasitas",
+    description: "Setiap lokasi menampilkan kapasitas, durasi sewa, dan fasilitas agar booking lebih cepat.",
+    icon: "i-lucide-users",
   },
   {
-    title: "Fokus",
-    description: "Menyediakan halaman profil UMKM untuk detail usaha dan kontak.",
-    icon: "i-lucide-notebook-pen",
+    title: "Konfirmasi booking",
+    description: "Hubungi pengelola melalui kontak yang tersedia untuk memastikan jadwal dan kebutuhan acara.",
+    icon: "i-lucide-calendar-check-2",
   },
 ])
 </script>
@@ -50,20 +51,18 @@ const highlightCards = ref([
         },
       }">
       <UPageHero
-        title="Wajah ekonomi lokal Pandeyan dalam satu tempat."
-        description="Portal ini memperkenalkan UMKM di Kelurahan Pandeyan, khususnya yang berada di RW 11
-              dan RW 13. Temukan profil usaha, produk, jam operasional, dan kontak untuk pemesanan
-              atau kunjungan—semua tersaji dalam satu katalog digital yang mudah dijelajahi."
-        headline="Katalog UMKM Kelurahan Pandeyan"
+        title="Rencanakan kegiatan Anda di Taman Legawong."
+        description="Portal ini membantu pengunjung memilih dan memesan tempat di Taman Legawong untuk acara keluarga, komunitas, hingga kegiatan santai. Cek kapasitas, fasilitas, dan kontak pengelola dalam satu tampilan yang mudah dijelajahi."
+        headline="Booking Tempat Taman Legawong"
         orientation="horizontal"
         :links="links">
         <UCard class="overflow-hidden rounded-3xl border border-white bg-white shadow-lg">
           <div class="rounded-2xl bg-slate-950 p-6 text-white">
-            <p class="text-sm uppercase tracking-wide text-amber-300">Pandeyan</p>
-            <p class="mt-3 text-2xl font-bold">Profil singkat kelurahan</p>
+            <p class="text-sm uppercase tracking-wide text-amber-300">Taman Legawong</p>
+            <p class="mt-3 text-2xl font-bold">Booking cepat, acara lebih tertata</p>
             <p class="mt-3 text-sm leading-6 text-slate-300">
-              Pandeyan adalah kawasan yang hidup dengan aktivitas warga, usaha mikro, dan potensi
-              ekonomi lokal yang bisa dipetakan melalui katalog digital.
+              Pilih lokasi sesuai kebutuhan acara, cek ketersediaan fasilitas, lalu hubungi
+              pengelola untuk konfirmasi jadwal kunjungan atau booking tempat.
             </p>
             <div class="mt-6 grid gap-3 sm:grid-cols-3 lg:grid-cols-1 xl:grid-cols-3">
               <div

@@ -10,10 +10,10 @@ const items = computed<NavigationMenuItem[]>(() => [
     active: route.path === "/",
   },
   {
-    label: "Daftar UMKM",
-    to: "/umkm",
-    icon: "i-lucide-store",
-    active: route.path.startsWith("/umkm"),
+    label: "Booking Tempat",
+    to: "/booking",
+    icon: "i-lucide-calendar-range",
+    active: route.path.startsWith("/booking"),
   },
 ])
 </script>
@@ -26,9 +26,9 @@ const items = computed<NavigationMenuItem[]>(() => [
           <Logo />
           <div>
             <span class="block text-sm font-bold uppercase text-amber-700 dark:text-amber-500">
-              Pandeyan
+              Taman
             </span>
-            <span class="block text-sm font-bold text-slate-900 dark:text-white">Katalog UMKM</span>
+            <span class="block text-sm font-bold text-slate-900 dark:text-white uppercase">Legawong</span>
           </div>
         </div>
       </template>
@@ -42,10 +42,10 @@ const items = computed<NavigationMenuItem[]>(() => [
             Beranda
           </UButton>
           <UButton
-            to="/umkm"
+            to="/booking"
             color="neutral"
             variant="ghost">
-            Daftar UMKM
+            Booking Tempat
           </UButton>
         </div>
       </template>
@@ -64,7 +64,7 @@ const items = computed<NavigationMenuItem[]>(() => [
     <UFooter class="border-t border-slate-200 dark:border-slate-800 py-6 mt-12">
       <template #left>
         <p class="text-muted text-sm">
-          Copyright © {{ new Date().getFullYear() }} Katalog UMKM Pandeyan. All rights reserved |
+          Copyright © {{ new Date().getFullYear() }} Taman Legawong. All rights reserved |
           KKN 84.008
           <abbr title='Universitas Pembangunan Nasional "Veteran" Yogyakarta'>UPNVY</abbr>
         </p>
@@ -76,7 +76,7 @@ const items = computed<NavigationMenuItem[]>(() => [
           variant="ghost"
           to="https://www.instagram.com/cerita.pandeyara/"
           target="_blank"
-          aria-label="Instagram UMKM Pandeyan" />
+          aria-label="Instagram Taman Legawong" />
       </template>
     </UFooter>
   </div>

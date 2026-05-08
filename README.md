@@ -1,13 +1,13 @@
-# UMKM Pandeyan — Katalog UMKM Kelurahan Pandeyan
+# Taman Legawong — Booking Tempat
 
-Situs katalog untuk menampilkan profil dan produk UMKM di Kelurahan Pandeyan. Memudahkan warga dan pengunjung menemukan usaha lokal, melihat detail usaha, dan menghubungi pemilik.
+Situs booking tempat untuk Taman Legawong. Memudahkan pengunjung melihat pilihan lokasi, kapasitas, fasilitas, dan kontak pengelola untuk reservasi.
 
 ## Fitur
 
-- Daftar UMKM dengan pencarian dan filter
-- Halaman profil UMKM (deskripsi, produk, kontak, lokasi)
-- Galeri foto produk
-- Peta lokasi UMKM (opsional)
+- Daftar tempat yang bisa dibooking
+- Halaman detail lokasi dengan kapasitas, fasilitas, dan kontak
+- Galeri foto lokasi
+- Peta lokasi Taman Legawong
 
 ## Teknologi
 
@@ -83,26 +83,30 @@ yarn preview
 bun run preview
 ```
 
-## Menambahkan/ Mengelola data UMKM
+## Menambahkan/ Mengelola data booking
 
-Simpan data UMKM di folder data/umkm.ts sebagai array objek. Contoh:
+Simpan data booking di folder app/data/booking.ts sebagai array objek. Contoh:
 
 ```ts
-export const umkmList: Umkm[] = [
+export const bookingSpaces: BookingSpace[] = [
   {
-    slug: "umkm-1",
-    name: "UMKM Contoh",
-    category: "Kuliner",
-    owner: "Budi",
-    address: "Jl. Contoh No. 1",
-    description: "UMKM contoh yang menjual makanan lezat.",
-    products: ["Nasi Goreng", "Mie Ayam"],
-    hours: "10:00 - 20:00",
-    contact: "08123456789",
-    highlight: "Makanan enak dengan harga terjangkau",
-    locationNote: "Dekat alun-alun Pandeyan",
+    slug: "gazebo-keluarga",
+    name: "Gazebo Keluarga",
+    category: "Gazebo",
+    description: "Ruang santai untuk acara keluarga atau arisan kecil.",
+    capacity: "10-15 orang",
+    duration: "2 jam",
+    price: 50000,
+    address: "Zona utama Taman Legawong",
+    images: ["https://picsum.photos/640/640?random=31"],
+    facilities: ["Bangku", "Atap teduh"],
+    hours: "08.00 - 17.00",
+    contact: "+62 812-7000-1122",
+    highlight: "Cocok untuk acara kecil dan santai",
+    locationNote: "Akses mudah dari pintu masuk utama taman",
+    googleMapsUrl: "https://www.google.com/maps/embed?...",
   },
-  // Tambahkan UMKM lain di sini
+  // Tambahkan lokasi booking lain di sini
 ]
 ```
 
