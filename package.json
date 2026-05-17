@@ -1,5 +1,5 @@
 {
-  "name": "umkm-pandeyan",
+  "name": "legawong-park",
   "type": "module",
   "private": true,
   "scripts": {
@@ -15,5 +15,8 @@
     "tailwindcss": "^4.2.4",
     "vue": "^3.5.33",
     "vue-router": "^5.0.6"
+  },
+  "devDependencies": {
+    "@iconify-json/lucide": "^1.2.108"
   }
 }

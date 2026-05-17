@@ -9,7 +9,7 @@ const categories = getBookingCategories()
     <UPageHeader
       class="max-w-3xl"
       title="Pilih tempat terbaik untuk kegiatan Anda di Taman Legawong."
-      description="Temukan gazebo, pendopo, area terbuka, dan panggung yang bisa dipesan sesuai kebutuhan acara. Setiap lokasi menampilkan kapasitas, durasi sewa, fasilitas, dan kontak pengelola agar proses booking lebih cepat."
+      description="Temukan gazebo, pendopo, area terbuka, dan panggung yang bisa dipesan sesuai kebutuhan acara. Setiap lokasi menampilkan ukuran, durasi sewa, fasilitas, dan kontak pengelola agar proses booking lebih cepat."
       headline="DAFTAR BOOKING TEMPAT" />
 
     <BadgeContainer class="mt-4">
@@ -53,7 +53,11 @@ const categories = getBookingCategories()
                 color="neutral"
                 variant="outline"
                 class="whitespace-nowrap">
-                {{ item.capacity }}
+                {{
+                  item.size
+                    ? `${item.size.width} x ${item.size.length} ${item.size.unit || "m"}`
+                    : ""
+                }}
               </UBadge>
             </div>
           </div>
@@ -74,15 +78,9 @@ const categories = getBookingCategories()
           </UBadge>
         </BadgeContainer>
 
-        <div class="mt-5 grid gap-3 text-sm sm:grid-cols-2">
-          <div>
-            <p class="font-semibold text-highlighted">Durasi</p>
-            <p class="mt-1 text-muted">{{ item.duration }}</p>
-          </div>
-          <div>
-            <p class="font-semibold text-highlighted">Harga mulai</p>
-            <p class="mt-1 text-muted">Rp {{ item.price.toLocaleString("id-ID") }},-</p>
-          </div>
+        <div class="mt-5 text-sm">
+          <p class="font-semibold text-highlighted">Harga (per 6 jam)</p>
+          <p class="mt-1 text-muted">Rp {{ item.pricePer6Hours.toLocaleString("id-ID") }},-</p>
         </div>
 
         <template #footer>

@@ -1,5 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 // npm i -D @iconify-json/lucide
+// npm i -D @iconify-json/simple-icons
 export default defineNuxtConfig({
   app: {
     head: {
