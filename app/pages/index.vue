@@ -59,7 +59,7 @@ const highlightCards = ref([
         headline="Booking Tempat Taman Legawong"
         orientation="horizontal"
         :links="links">
-        <UCard class="overflow-hidden rounded-3xl border border-white bg-white shadow-lg">
+        <!-- <UCard class="overflow-hidden rounded-3xl border border-white bg-white shadow-lg">
           <div class="rounded-2xl bg-slate-950 p-6 text-white">
             <p class="text-sm uppercase tracking-wide text-amber-300">Taman Legawong</p>
             <p class="mt-3 text-2xl font-bold">Booking cepat, acara lebih tertata</p>
@@ -77,7 +77,7 @@ const highlightCards = ref([
               </div>
             </div>
           </div>
-        </UCard>
+        </UCard> -->
       </UPageHero>
     </UTheme>
 

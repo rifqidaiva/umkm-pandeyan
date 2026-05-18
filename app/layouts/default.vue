@@ -4,10 +4,10 @@ import type { NavigationMenuItem } from "@nuxt/ui"
 const route = useRoute()
 const items = computed<NavigationMenuItem[]>(() => [
   {
-    label: "Booking Tempat",
-    to: "/booking",
+    label: "Reservasi",
+    to: "/reservation",
     icon: "i-lucide-calendar-range",
-    active: route.path === "/booking",
+    active: route.path === "/reservation",
   },
   {
     label: "Masuk",
@@ -40,7 +40,7 @@ const items = computed<NavigationMenuItem[]>(() => [
           to="/booking"
           color="neutral"
           variant="link">
-          Booking Tempat
+          Reservasi
         </UButton>
         <UColorModeButton />
         <UButton
